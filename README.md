@@ -5,7 +5,7 @@ Connecting to AWS Elastic Search using Spring Boot running in localhost
 Prerequisite
 
 1. Create an Elastic Search cluster in AWS in t2.small instance which provides 0.5 GB of RAM in free tier
-2.  AWS ElasticService Https rest calls have to be signed with AWS credentials, hence an interceptor {@link HttpRequestInterceptor} is required to sign every API calls with credentials. 
+2. AWS ElasticService Https rest calls have to be signed with AWS credentials, hence an interceptor {@link HttpRequestInterceptor} is required to sign every API calls with credentials. 
 
 AWS Elastic Search provides the following endpoints
 
@@ -16,11 +16,11 @@ Config
 
 Provide the following configuration in the application. properties file
 
-aws.es.region=ap-southeast-1
-aws.es.endpoint=Aws_ealtic_cluster_endpoint
-#aws.serviceName=es
-aws.es.accessKeyId=accessId
-aws.es.secretKey=secretkey
+1. aws.es.region=ap-southeast-1
+2. aws.es.endpoint=Aws_ealtic_cluster_endpoint
+3. #aws.serviceName=es
+4. aws.es.accessKeyId=accessId
+5. aws.es.secretKey=secretkey
 
 
 In this test project, access policy is set to open to all to access both services but in production more strict policies should be applied
